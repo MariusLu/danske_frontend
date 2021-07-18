@@ -93,7 +93,7 @@ export default class App extends Component {
     console.log(formData)
     try {
       const res = axios.post(
-        `https://backendfordanske.eu.openode.io/upload`,
+        `https://danskebackend.eu.openode.io/upload`,
         formData
       );
       console.log(res);
@@ -104,7 +104,7 @@ export default class App extends Component {
 
 
   fetchData = () => {
-    const url = `https://backendfordanske.eu.openode.io/getData`;
+    const url = `https://danskebackend.eu.openode.io/getData`;
     axios
       .get(url)
       .then(response => this.setState({products: response.data}))
